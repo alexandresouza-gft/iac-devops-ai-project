@@ -1,0 +1,64 @@
+# ==========================================
+# Terraform
+# ==========================================
+# Diretórios locais
+.terraform/
+.terraform.tfstate*
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Arquivo de estado e backup (não versionar nunca)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Arquivo de variáveis sensíveis
+*.tfvars
+*.tfvars.json
+
+# Lockfile (opcional manter versionado, mas geralmente recomendado)
+# Se quiser versionar, comente a linha abaixo
+.terraform.lock.hcl
+
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+
+# Virtualenv
+.env
+.venv
+venv/
+ENV/
+env.bak/
+
+# ==========================================
+# Docker
+# ==========================================
+# Logs e arquivos temporários
+*.log
+docker-compose.override.yml
+
+# ==========================================
+# Outros
+# ==========================================
+*.local
+*.bak
+.DS_Store
+Thumbs.db
+
+tfout.json

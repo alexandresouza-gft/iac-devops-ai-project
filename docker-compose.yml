@@ -1,0 +1,13 @@
+services:
+  app:
+    # image: meu-app-streamlit:py312
+    # ou build direto:
+    build: .
+    container_name: meu-app
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      SERVER_PORT: "8501"
+    restart: unless-stopped
