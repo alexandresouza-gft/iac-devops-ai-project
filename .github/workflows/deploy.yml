@@ -7,7 +7,6 @@ on:
         default: "master"
         required: true
         type: string
-
 env:
   REPOSITORY_NAME: iac-devops-ai-project
   REPOSITORY_NAME_LC: iac-devops-ai-project
